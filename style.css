@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s all ease-in-out;
+}
+body {
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ececec;
+}
+.container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#oddEven {
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+#counter {
+    font-size: 6rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+button, .increment, .decrement, .reset {
+    padding: 0.5rem 1rem;
+    border: 0px;
+    border-radius: 0rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.increment {
+    background-color: #20c997;
+    color: #ffffff;
+}
+.decrement {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+.reset {
+    background-color: #696a6a;
+    color: #ffffff;
+}
+.increment:hover {
+    background-color: #1aa37a;
+}
+.decrement:hover {
+    background-color: #b22c39;
+}
+.reset:hover {
+    background-color: #545555;
+}
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.odd {
+    color: #fd7e14;
+}
+.even {
+    color: #6f42c1;
+}
