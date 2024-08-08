@@ -49,6 +49,10 @@ function decrement(){
         c--;
         num.textContent = c;
         if(c % 2 == 0){
+            if(c == 0){                
+                resetBtn.classList.add('disabled');
+                decrementBtn.classList.add('disabled');
+            }
             oddEven.textContent = 'Even';
             oddEven.classList.add('even');
             oddEven.classList.remove('odd');
